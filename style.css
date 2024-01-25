@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'montserrat';
+    color: white;
+    /* background-color: black; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /* opacity: 0.3; */
+}
+#TOPheading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: 37%;
+    font-size: 60px;
+    position: fixed;
+    z-index: 9;
+}
+video{
+    /* position: fixed; */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-color: rgba(255, 255, 255, 0.8); */
+      /* opacity: 0.4; */
+      z-index: 1;
+      position: fixed;
+      /* position: relative; */
+}
+#boxform{
+  font-size: 35px;
+    margin-left: 300px;
+    margin-top: 150px;
+    /* height: 1000px; */
+    /* width: 100%; */
+    /* background-color: rgb(0, 0, 0); */
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 80%;
+    width: 70%;
+
+    position: absolute;
+    z-index: 99;
+    padding-left: 200px;
+    /* padding: 300px; */
+    /* opacity: 0.3; */
+}
+
+#mainform{
+    z-index: 9;
+    margin-top: 10%;
+}
+
+.bn29 {
+  height: 70px;
+  width: 200px;
+    border: none;
+    padding: 0.8em 2.5em;
+    outline: none;
+    color: white;
+    font-style: 1.2em;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+  }
+  
+  .bn29:before,
+  .bn29:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+  }
+  
+  .bn29:before {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+    animation: pulse 10s infinite ease;
+  }
+  
+  .bn29:after {
+    -webkit-filter: blur(0.3px);
+    filter: blur(0.3px);
+  }
+  
+  .bn29:hover:before {
+    width: 115%;
+    height: 115%;
+  }
